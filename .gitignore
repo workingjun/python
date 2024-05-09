@@ -1,0 +1,11 @@
+datafile/
+
+예시자료/
+
+*.csv
+
+*.exe
+
+*.pth
+
+Onebook/**/__pycache__/

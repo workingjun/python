@@ -1,5 +1,7 @@
 datafile/
 
+datafile/
+
 예시자료/
 
 *.csv
@@ -8,4 +10,3 @@ datafile/
 
 *.pth
 
-Onebook/**/__pycache__/

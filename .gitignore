@@ -1,6 +1,16 @@
+<<<<<<< HEAD
+.__pycache__/
+
+AI/__pycache__/
+
+AI/dataset_electronics/
+
+AI/dataset/
+=======
 datafile/
 
 example/
+>>>>>>> 50f45d1a1bef6e3d136ce11f41bfd8fdf17f28c8
 
 *.csv
 
@@ -8,3 +18,11 @@ example/
 
 *.pth
 
+<<<<<<< HEAD
+crowling_py37/build/
+
+crowling_py37/dist/
+
+pic/
+=======
+>>>>>>> 50f45d1a1bef6e3d136ce11f41bfd8fdf17f28c8

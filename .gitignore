@@ -26,3 +26,17 @@ crowling_py37/dist/
 pic/
 =======
 >>>>>>> 50f45d1a1bef6e3d136ce11f41bfd8fdf17f28c8
+
+
+coupang/*.spec
+
+coupang/dist/
+
+coupang/build/
+
+
+instagram/비키니/
+
+instagram/.env
+
+instagram/.vscode

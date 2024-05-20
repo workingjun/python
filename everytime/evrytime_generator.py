@@ -2,10 +2,16 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.alert import Alert 
 import time
-
+import os
+from dotenv import load_dotenv
 
 
 def login(browser):
+    load_dotenv()
+    
+    my_id=os.getenv("my_id")
+    my_password=os.getenv("my_password")
+    
     browser.get('https://everytime.kr/')
     browser.maximize_window()
 
@@ -18,11 +24,11 @@ def login(browser):
 
     elem = browser.find_element(By.XPATH, '/html/body/div[1]/div/form/div[1]/input[1]')
     elem.click()
-    elem.send_keys("kim0102483")
+    elem.send_keys(my_id)
 
     elem = browser.find_element(By.XPATH, '/html/body/div[1]/div/form/div[1]/input[2]')
     elem.click()
-    elem.send_keys("junhee2483")
+    elem.send_keys(my_password)
 
     elem.send_keys(Keys.ENTER)
 

@@ -18,12 +18,15 @@ example/
 
 *.pth
 
+*.txt
+
+*.jpg
+
 <<<<<<< HEAD
 crowling_py37/build/
 
 crowling_py37/dist/
 
-pic/
 =======
 >>>>>>> 50f45d1a1bef6e3d136ce11f41bfd8fdf17f28c8
 
@@ -46,3 +49,15 @@ instagram/Arin2
 instagram/Arin_video
 
 instagram/*.pkl
+
+
+python_lecture/pic/
+
+python_lecture/*.txt
+
+python_lecture/myDir
+
+python_lecture/build
+
+python_lecture/dist
+

@@ -31,11 +31,15 @@ crowling_py37/dist/
 >>>>>>> 50f45d1a1bef6e3d136ce11f41bfd8fdf17f28c8
 
 
-coupang/*.spec
+coupang_project/*.spec
 
-coupang/dist/
+coupang_project/dist/
 
-coupang/build/
+coupang_project/build/
+
+coupang_project/chromedriver-win32
+
+__pycache__/
 
 
 instagram/비키니/

@@ -41,6 +41,7 @@ coupang_project/chromedriver-win32
 
 __pycache__/
 
+*.zip
 
 instagram/비키니/
 

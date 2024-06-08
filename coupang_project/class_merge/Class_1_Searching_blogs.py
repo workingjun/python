@@ -2,12 +2,12 @@ from selenium.webdriver.common.by import By
 from bs4 import BeautifulSoup   
 import math
 
-class Searching_blog():
+class BlogManager():
     def __init__(self, driver, content=50):
         self.driver = driver
         self.content = content
                
-    def Saerch_and_Scroll(self, query):
+    def Search_and_Scroll(self, query):
         self.driver.get('http://www.naver.com')  
 
         element = self.driver.find_element(By.ID, 'query')

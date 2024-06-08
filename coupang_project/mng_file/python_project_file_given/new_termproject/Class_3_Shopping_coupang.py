@@ -1,19 +1,19 @@
 import requests
 from bs4 import BeautifulSoup
-from Class_2 import SearchManager as SM
+from Class_2_Searching_coupang import CoupangManager as CM
 
-class shopping():       
+class ShopManager():       
         def __init__(self, driver):
                 self.driver = driver
 
         def request(self):
-                raw = SM(self.driver).page_source()
+                raw = CM(self.driver).page_source()
                 search = BeautifulSoup(raw, 'html.parser')
                 return search
-        
+
         def find_html(self):
                 product_num = 1
-                
+
                 link_list, imageLink_list, title_list, price_list, point_list=[], [], [], [], [] 
 
                 search = self.request()
@@ -31,9 +31,6 @@ class shopping():
                         title = product.find('div', {'class' : 'name'})
                         price = product.find('strong', {'class' : 'price-value'})
                         point = product.find('span', {'class' : 'rating-total-count'})
-                        
-                        if point is None:
-                                point=''
 
                         link2 = product.find('a')['href']
                         link = "https://www.coupang.com" + link2
@@ -44,14 +41,14 @@ class shopping():
 
                         title_list.append(title_text)
 
-                        if isinstance(point, str):
-                                price_list.append(price)
+                        if price is None:
+                                price_list.append('')
                         else:
                                 price_list.append(price.text)
                         
 
-                        if isinstance(point, str):
-                                point_list.append(point)
+                        if point is None:
+                                point_list.append('')
                         else:
                                 point_list.append(point.text)
                         
@@ -60,4 +57,3 @@ class shopping():
                         product_num += 1
 
                 return link_list, imageLink_list, title_list, price_list, point_list
-                

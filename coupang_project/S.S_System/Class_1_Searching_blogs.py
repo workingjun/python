@@ -8,8 +8,6 @@ class BlogManager():
         self.content = content
                
     def Search_and_Scroll(self, query):
-        self.driver.get('http://www.naver.com')  
-
         element = self.driver.find_element(By.ID, 'query')
         element.send_keys(query)
         element.send_keys("\n")

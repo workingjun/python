@@ -22,6 +22,8 @@ example/
 
 *.jpg
 
+*.png
+
 <<<<<<< HEAD
 crowling_py37/build/
 
